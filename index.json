@@ -1,0 +1,740 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_4DbMjB": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_DqR3eQ": {
+          "type": "_slide",
+          "name": "t:names.slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/Imagen-de-WhatsApp-2025-10-08-a-las-09.22.06_0b895bdb-scaled.webp",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "text_7dbe6h": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>VitaBlu</h1><h1>Eat Pure, Live Long</h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_zzrAGH": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We transport the essence of longevity from the renowned<br/>Blue Zone Mediterranean island of Sardinia right to your table</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_7PMifH": {
+              "type": "button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_7dbe6h",
+            "text_zzrAGH",
+            "button_7PMifH"
+          ]
+        },
+        "slide_PeHwLM": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/Imagen-de-WhatsApp-2025-10-08-a-las-09.22.06_48ca8b1e-scaled.webp",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "text_imnrW8": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>VitaBlu</h1><h1>Eat Pure, Live Long</h1>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_k6mzgj": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We transport the essence of longevity from the renowned<br/>Blue Zone Mediterranean island of Sardinia right to your table</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_e4jDeP": {
+              "type": "button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_imnrW8",
+            "text_k6mzgj",
+            "button_e4jDeP"
+          ]
+        },
+        "slide_A3E7mL": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/Imagen-de-WhatsApp-2025-10-08-a-las-09.22.06_96a86088-scaled.webp",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "text_A3E7h1": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>VitaBlu</h1><h1>Eat Pure, Live Long</h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_A3E7p1": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We transport the essence of longevity from the renowned<br/>Blue Zone Mediterranean island of Sardinia right to your table</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_4pazWq": {
+              "type": "button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_A3E7h1",
+            "text_A3E7p1",
+            "button_4pazWq"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_DqR3eQ",
+        "slide_PeHwLM",
+        "slide_A3E7mL"
+      ],
+      "name": "Hero",
+      "settings": {
+        "display_mode": "full_frame",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 12,
+        "corner_radius": 0,
+        "slide_height": "medium",
+        "content_position": "on-media",
+        "color_scheme": "",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_KAkiFA": {
+      "type": "section",
+      "blocks": {
+        "group_7t7gPj": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_W8wweH": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Vitablu is your trusted source for pure, authentic Sardinian products like extra virgin olive oil and hand-harvested sea salt. Inspired by the timeless health benefits of the Mediterranean diet and Sardinia’s tradition of longevity, our carefully curated selection of nutrition-rich ingredients nourishes both body and soul. Experience the essence of Sardinia in every bite and embrace a lifestyle celebrated for its emphasis on wellness and longevity. Taste the tradition. Live the legacy.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "custom_liquid_xT89EF": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<div class=\"contenedor-rotacion\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0773/2776/1630/files/Copia-de-Brown-Minimalist-Aesthetic-Moodboard-Photo-Collage-Instagram-Post-4.webp?v=1766606346\" \n    alt=\"Blue Zone\" \n    class=\"imagen-gira-scroll\"\n  >\n</div>\n\n<style>\n  .contenedor-rotacion {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    padding: 20px; /* Agregué un poco de espacio para que no se corte al girar */\n  }\n\n  .imagen-gira-scroll {\n    display: block;\n    width: 100%;\n    max-width: 600px; /* Opcional: Limita el tamaño para que no sea gigante */\n    height: auto;\n    transition: transform 0.1s ease-out; \n    will-change: transform;\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    const imagen = document.querySelector(\".imagen-gira-scroll\");\n    \n    if (imagen) {\n      window.addEventListener(\"scroll\", function() {\n        const scrollPosition = window.scrollY;\n        \n        // CAMBIO AQUÍ:\n        // Antes era / 5. Ahora es / 20.\n        // Esto hace que la rotación sea 4 veces más pequeña/lenta.\n        const rotation = scrollPosition / 20;\n        \n        imagen.style.transform = `rotate(${rotation}deg)`;\n      });\n    }\n  });\n</script>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_W8wweH",
+            "custom_liquid_xT89EF"
+          ]
+        },
+        "text_DhNjQE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_7t7gPj",
+        "text_DhNjQE"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "product_list_AXFea6": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_NVqdbi": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<p>Our Authentic Sardinian Products </p><h2>& Longevity Gift Sets </h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "2rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_68CQrz": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "View all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_NVqdbi",
+            "product_list_button_68CQrz"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 4,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_aMKUzh": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_jcEgCU": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_8Lgq6c": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_aMKUzh",
+            "product_title_jcEgCU",
+            "price_8Lgq6c"
+          ]
+        }
+      },
+      "name": "t:names.products_grid",
+      "settings": {
+        "collection": "frontpage",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 6,
+        "columns": 3,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "horizontal_alignment": "center",
+        "gap": 28,
+        "color_scheme": "",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "slideshow_q63AMa": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yWfipY": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/Whisk_954717eecd.jpg",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "slide_yWfipY"
+      ],
+      "name": "t:names.slideshow_inset",
+      "settings": {
+        "display_mode": "with_hints",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 18,
+        "corner_radius": 20,
+        "slide_height": "medium",
+        "content_position": "below-media",
+        "color_scheme": "",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "none",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "custom_liquid_Lntd48": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap\" rel=\"stylesheet\">\n\n<style>\n#insta-section {\n    font-family: 'Montserrat', sans-serif;\n    width: 100%;\n    max-width: 800px;\n    margin: 60px auto;\n    padding: 0 20px;\n    box-sizing: border-box;\n}\n\n.insta-header {\n    text-align: center;\n    margin-bottom: 40px;\n}\n.insta-header h2 {\n    font-size: 1.8rem;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    color: #2c3e50;\n    margin-bottom: 8px;\n}\n.insta-header a {\n    text-decoration: none;\n    color: #7f8c8d;\n    font-size: 1.1rem;\n}\n.insta-header a:hover { color: #000; }\n\n.insta-track-container {\n    position: relative;\n    overflow: hidden;\n}\n\n.insta-track {\n    display: flex;\n    gap: 20px;\n}\n\n.insta-card {\n    flex: 0 0 calc(33.333% - 14px);\n    opacity: 0.4;\n    transform: scale(0.85);\n    transition: transform 0.4s ease, opacity 0.4s ease;\n}\n\n.insta-card.active {\n    opacity: 1;\n    transform: scale(1);\n    z-index: 3;\n}\n\n.insta-video-box {\n    position: relative;\n    width: 100%;\n    padding-top: 177.77%;\n    border-radius: 20px;\n    overflow: hidden;\n    background: #000;\n    box-shadow: 0 10px 30px rgba(0,0,0,0.15);\n}\n\n.insta-video-box iframe {\n    position: absolute;\n    inset: 0;\n    width: 100%;\n    height: 100%;\n    border: 0;\n}\n\n.insta-arrow {\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    width: 45px;\n    height: 45px;\n    background: #fff;\n    border-radius: 50%;\n    box-shadow: 0 4px 15px rgba(0,0,0,0.25);\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    z-index: 20;\n}\n\n.insta-arrow svg {\n    width: 20px;\n    height: 20px;\n    fill: #333;\n}\n\n.insta-arrow.left { left: -10px; }\n.insta-arrow.right { right: -10px; }\n\n@media (max-width: 800px) {\n    .insta-card { flex: 0 0 80%; }\n}\n</style>\n\n<div id=\"insta-section\">\n    <div class=\"insta-header\">\n        <h2>SHOP OUR INSTAGRAM</h2>\n        <a href=\"https://www.instagram.com/vitablu.co/\" target=\"_blank\">@vitablu.co →</a>\n    </div>\n\n    <div class=\"insta-track-container\">\n        <div class=\"insta-arrow left\" onclick=\"moveCarousel(-1)\">\n            <svg viewBox=\"0 0 24 24\"><path d=\"M15 18l-6-6 6-6\"/></svg>\n        </div>\n\n        <div class=\"insta-arrow right\" onclick=\"moveCarousel(1)\">\n            <svg viewBox=\"0 0 24 24\"><path d=\"M9 6l6 6-6 6\"/></svg>\n        </div>\n\n        <div class=\"insta-track\">\n\n            <!-- ORIGINALES -->\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1063614986?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1063615054?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1063615080?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1063615024?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <!-- NUEVOS -->\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1164968419?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1164968970?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1164969255?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1164970398?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n            <div class=\"insta-card\"><div class=\"insta-video-box\">\n                <iframe src=\"https://player.vimeo.com/video/1164970612?muted=1&controls=0&loop=1&api=1\"></iframe>\n            </div></div>\n\n        </div>\n    </div>\n</div>\n\n<script>\nconst track = document.querySelector('.insta-track');\nlet activeIframe = null;\n\nfunction getCards() {\n    return document.querySelectorAll('.insta-card');\n}\n\nfunction pauseAllVideos() {\n    document.querySelectorAll('iframe').forEach(iframe => {\n        iframe.contentWindow.postMessage('{\"method\":\"pause\"}', '*');\n    });\n}\n\nfunction playVideo(iframe) {\n    iframe.contentWindow.postMessage('{\"method\":\"play\"}', '*');\n    activeIframe = iframe;\n}\n\nfunction setActiveCenter() {\n    const cards = getCards();\n    cards.forEach(card => card.classList.remove('active'));\n\n    const centerIndex = 1;\n    const centerCard = cards[centerIndex];\n    centerCard.classList.add('active');\n\n    const iframe = centerCard.querySelector('iframe');\n\n    pauseAllVideos();\n    playVideo(iframe);\n}\n\nfunction moveCarousel(direction) {\n    if (direction === 1) {\n        track.appendChild(track.firstElementChild);\n    } else {\n        track.prepend(track.lastElementChild);\n    }\n    setActiveCenter();\n}\n\nwindow.addEventListener('message', function(event) {\n    if (!activeIframe) return;\n\n    if (typeof event.data === \"string\" && event.data.includes('\"event\":\"ended\"')) {\n        activeIframe.contentWindow.postMessage('{\"method\":\"play\"}', '*');\n    }\n});\n\nwindow.addEventListener('load', () => {\n    pauseAllVideos();\n    setActiveCenter();\n});\n</script>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow_4DbMjB",
+    "section_KAkiFA",
+    "product_list_AXFea6",
+    "slideshow_q63AMa",
+    "custom_liquid_Lntd48"
+  ]
+}
