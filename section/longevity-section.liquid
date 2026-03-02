@@ -1,0 +1,224 @@
+{% schema %}
+{
+  "name": "Longevity Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Blue Zone Lifestyle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Pure Sardinian Essence"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "Paragraph 1",
+      "default": "Vitablu is your trusted source for pure, authentic Sardinian products like extra virgin olive oil and hand-harvested sea salt."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_2",
+      "label": "Paragraph 2",
+      "default": "Inspired by the timeless health benefits of the Mediterranean diet and Sardinia’s tradition of longevity, our carefully curated selection of nutrition-rich ingredients nourishes both body and soul."
+    },
+    {
+      "type": "text",
+      "id": "highlight",
+      "label": "Highlight Quote",
+      "default": "Experience the essence of Sardinia in every bite. Taste the tradition, live the legacy."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Discover Our Products"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Vimeo Embed URL",
+      "default": "https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Longevity Section"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="longevity-section">
+  <div class="longevity-grid">
+    
+    <!-- TEXT -->
+    <div class="longevity-content">
+      <span class="longevity-subtitle">{{ section.settings.subtitle }}</span>
+      <h2>{{ section.settings.title }}</h2>
+      
+      <p>{{ section.settings.paragraph_1 }}</p>
+      <p>{{ section.settings.paragraph_2 }}</p>
+
+      <div class="longevity-highlight">
+        "{{ section.settings.highlight }}"
+      </div>
+
+      {% if section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="longevity-btn">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+
+    <!-- VIDEO -->
+    <div class="longevity-media">
+
+      {% if section.settings.video_url != blank %}
+      <div class="longevity-video">
+        <div class="longevity-video-inner">
+          <iframe 
+            src="{{ section.settings.video_url }}"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+:root {
+    --vita-blue: #1A3C5A;
+    --olive-green: #6B705C;
+    --sand-light: #F9F8F6;
+    --sand-dark: #E6E2D8;
+    --text-dark: #2D3032;
+    --text-light: #5A5D60;
+}
+
+.longevity-section {
+    min-height: 100vh; 
+    width: 100%;
+    padding: 0 8%;
+    display: flex;
+    align-items: center; 
+    background-color: var(--sand-light);
+    background-image: radial-gradient(circle at 10% 20%, rgba(26, 60, 90, 0.03) 0%, transparent 50%);
+    font-family: 'Lato', sans-serif;
+}
+
+.longevity-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.longevity-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--vita-blue);
+}
+
+.longevity-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.longevity-highlight {
+    margin-top: 40px;
+    padding-left: 20px;
+    border-left: 3px solid var(--olive-green);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+.longevity-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 35px;
+    background-color: var(--vita-blue);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.longevity-media {
+    position: relative;
+}
+
+.longevity-video {
+    position: relative; /* ya no absoluto */
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.longevity-video-inner {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+    position: relative;
+    background: #000;
+}
+
+.longevity-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .longevity-section {
+        padding: 80px 6%;
+        min-height: auto;
+    }
+
+    .longevity-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .longevity-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .longevity-video {
+        width: 100%;
+    }
+}
+</style>
