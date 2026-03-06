@@ -45,9 +45,9 @@
     },
     {
       "type": "text",
-      "id": "video_url",
-      "label": "Vimeo Embed URL",
-      "default": "https://player.vimeo.com/video/1169987156?autoplay=1&loop=1&muted=1"
+      "id": "video_url_cdn",
+      "label": "Shopify Video URL (CDN)",
+      "default": "https://cdn.shopify.com/videos/c/o/v/7479b1193e6c4bf4acf451befd73e775.mp4"
     }
   ],
   "presets": [
@@ -61,7 +61,6 @@
 <section class="longevity-section">
   <div class="longevity-grid">
     
-    <!-- TEXT -->
     <div class="longevity-content">
       <span class="longevity-subtitle">{{ section.settings.subtitle }}</span>
       <h2>{{ section.settings.title }}</h2>
@@ -80,16 +79,20 @@
       {% endif %}
     </div>
 
-    <!-- VIDEO -->
     <div class="longevity-media">
-      {% if section.settings.video_url != blank %}
+      {% if section.settings.video_url_cdn != blank %}
       <div class="longevity-video">
         <div class="longevity-video-inner">
-          <iframe 
-            src="https://player.vimeo.com/video/1169987156?autoplay=1&loop=1&muted=1&playsinline=1"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video 
+            class="longevity-video-element" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            preload="auto">
+            <source src="{{ section.settings.video_url_cdn }}" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
         </div>
       </div>
       {% endif %}
@@ -204,11 +207,14 @@
     background: #000;
 }
 
-.longevity-video iframe {
+/* ESTILO PARA EL VIDEO MP4 */
+.longevity-video-element {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover; 
 }
 
 @media (max-width: 900px) {
