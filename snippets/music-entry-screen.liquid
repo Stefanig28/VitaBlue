@@ -1,0 +1,180 @@
+{%- assign music_url = "https://cdn.shopify.com/s/files/1/0773/2776/1630/files/Inspiring_Violins_Classical_Background_Music_for_Videos_Rafael_Krux.mp3?v=1773171574" -%}
+
+<div id="music-entry-overlay" role="dialog" aria-modal="true" aria-label="Bienvenida">
+  <div class="meo-content">
+    <p class="meo-tagline">
+      Welcome&mdash;<em>enter with music for an immersive experience</em>.
+    </p>
+    <div class="meo-buttons">
+      <button class="meo-btn meo-btn--music" id="meo-enter-music" type="button">
+        Enter with music
+      </button>
+      <button class="meo-btn meo-btn--silence" id="meo-enter-silence" type="button">
+        Enter with silence
+      </button>
+    </div>
+  </div>
+</div>
+
+<audio id="bg-music" loop preload="auto">
+  <source src="{{ music_url }}" type="audio/mpeg">
+</audio>
+
+<style>
+  /* ——— OVERLAY ——— */
+  #music-entry-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.52);
+    backdrop-filter: blur(18px) saturate(0.65);
+    -webkit-backdrop-filter: blur(18px) saturate(0.65);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 80px 72px;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+  }
+
+  #music-entry-overlay.meo-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .meo-content {
+    max-width: 520px;
+    animation: meoFadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+  }
+
+  @keyframes meoFadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0);    }
+  }
+
+  .meo-tagline {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+    font-weight: 400;
+    color: #f5f0eb;
+    line-height: 1.45;
+    margin: 0 0 30px;
+    letter-spacing: 0.01em;
+  }
+
+  .meo-tagline em { font-style: italic; }
+
+  .meo-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .meo-btn {
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-family: 'Georgia', serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1.5px solid rgba(245, 240, 235, 0.6);
+    backdrop-filter: blur(8px);
+  }
+
+  .meo-btn--music {
+    background: rgba(245, 240, 235, 0.18);
+    color: #f5f0eb;
+  }
+
+  .meo-btn--music:hover {
+    background: rgba(245, 240, 235, 0.32);
+    border-color: rgba(245, 240, 235, 0.9);
+    transform: translateY(-1px);
+  }
+
+  .meo-btn--silence {
+    background: transparent;
+    color: rgba(245, 240, 235, 0.72);
+  }
+
+  .meo-btn--silence:hover {
+    background: rgba(245, 240, 235, 0.1);
+    color: #f5f0eb;
+    transform: translateY(-1px);
+  }
+
+  body.meo-active { overflow: hidden; }
+
+  @media (max-width: 600px) {
+    #music-entry-overlay { padding: 0 28px 60px 28px; }
+  }
+</style>
+
+<script>
+window.__musicEntryInit = function () {
+  var DONE_KEY  = 'music-entry-done';
+  var STATE_KEY = 'music-playing';
+
+  var overlay = document.getElementById('music-entry-overlay');
+  var audio   = document.getElementById('bg-music');
+
+  window.__musicAudio = audio;
+
+  window.__musicFadeIn = function () {
+    audio.volume = 0;
+    audio.play().then(function () {
+      var v = 0, t = setInterval(function () {
+        v = Math.min(v + 0.03, 0.55);
+        audio.volume = v;
+        if (v >= 0.55) clearInterval(t);
+      }, 80);
+      window.__musicSetPlaying(true);
+    }).catch(function (e) { console.log('Autoplay bloqueado:', e); });
+  };
+
+  window.__musicFadeOut = function () {
+    var v = audio.volume;
+    var t = setInterval(function () {
+      v = Math.max(v - 0.05, 0);
+      audio.volume = v;
+      if (v <= 0) { clearInterval(t); audio.pause(); window.__musicSetPlaying(false); }
+    }, 60);
+  };
+
+  window.__musicSetPlaying = function (state) {
+    sessionStorage.setItem(STATE_KEY, state ? '1' : '0');
+    var btn = document.getElementById('header-music-toggle');
+    if (btn) btn.setAttribute('data-playing', state ? 'true' : 'false');
+  };
+
+  if (sessionStorage.getItem(DONE_KEY)) {
+    overlay.style.display = 'none';
+    if (sessionStorage.getItem(STATE_KEY) === '1') window.__musicFadeIn();
+    return;
+  }
+
+  document.body.classList.add('meo-active');
+
+  document.getElementById('meo-enter-music').addEventListener('click', function () {
+    window.__musicFadeIn();
+    dismiss();
+  });
+
+  document.getElementById('meo-enter-silence').addEventListener('click', function () {
+    dismiss();
+  });
+
+  function dismiss() {
+    overlay.classList.add('meo-hidden');
+    document.body.classList.remove('meo-active');
+    sessionStorage.setItem(DONE_KEY, '1');
+  }
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', window.__musicEntryInit);
+} else {
+  window.__musicEntryInit();
+}
+</script>
