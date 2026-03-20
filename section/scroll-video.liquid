@@ -2,7 +2,6 @@
 
   <div class="video-sticky">
 
-    <!-- SECUENCIA DE FRAMES -->
     <img
       id="scrollFrames"
       src="https://cdn.shopify.com/s/files/1/0773/2776/1630/files/frame_0001_0.00s.png?v=1774021473"
@@ -11,7 +10,6 @@
       height="1080"
     >
 
-    <!-- IMAGEN FINAL -->
     <img
       id="endImage"
       src="https://cdn.shopify.com/s/files/1/0773/2776/1630/files/PATTERN_VITABLU_VERDE.jpg?v=1772729319"
@@ -20,7 +18,6 @@
       height="1463"
     />
 
-    <!-- CARRUSEL -->
     <div class="carousel-overlay" id="carouselOverlay">
 
       <button class="carousel-arrow carousel-arrow--left" id="carouselPrev">
@@ -204,51 +201,63 @@ const frames = [
 
 const frameCount = frames.length;
 
-/* precarga */
 frames.forEach(src=>{
-const img=new Image();
-img.src=src;
+  const img=new Image();
+  img.src=src;
 });
 
-/* scroll */
+const track=document.getElementById("carouselTrack");
+const prevBtn=document.getElementById("carouselPrev");
+const nextBtn=document.getElementById("carouselNext");
+let currentIndex=0;
+
+function getVisibleCount(){
+  return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 4;
+}
+
+function getMaxIndex(){
+  const items=track.querySelectorAll(".carousel-item");
+  return Math.max(0, items.length - getVisibleCount());
+}
+
+function moveCarousel(dir){
+  currentIndex=Math.max(0,Math.min(currentIndex+dir, getMaxIndex()));
+  const itemWidth=track.querySelector(".carousel-item").offsetWidth+12;
+  track.style.transform=`translateX(-${currentIndex*itemWidth}px)`;
+}
+
+prevBtn.addEventListener("click",()=>moveCarousel(-1));
+nextBtn.addEventListener("click",()=>moveCarousel(1));
+
 function updateFrames(){
+  const scrollTop=window.scrollY;
+  const sectionTop=section.offsetTop;
+  const sectionScrollable=section.offsetHeight - window.innerHeight;
+  const scrolled=scrollTop - sectionTop;
 
-const rect=section.getBoundingClientRect();
-const sectionHeight=section.offsetHeight-window.innerHeight;
-const scrolled=-rect.top;
+  const progress=scrolled / sectionScrollable;
+  const clamped=Math.max(0, Math.min(progress, 1));
 
-const progress=scrolled/sectionHeight;
-const clamped=Math.max(0,Math.min(progress,1));
+  const frameIndex=Math.min(frameCount-1, Math.floor(clamped * frameCount));
+  frameImage.src=frames[frameIndex];
 
-const frameIndex=Math.min(
-  frameCount - 1,
-  Math.floor(clamped * frameCount)
-);
-
-frameImage.src=frames[frameIndex];
-
-/* imagen final */
-const fadeStart=.85;
-
-if(clamped>fadeStart){
-
-const fadeProgress=(clamped-fadeStart)/(1-fadeStart);
-endImage.style.opacity=fadeProgress;
-
-if(fadeProgress>.3){
-carousel.classList.add("visible");
-}else{
-carousel.classList.remove("visible");
+  const fadeStart=0.85;
+  if(clamped >= fadeStart){
+    const fadeProgress=(clamped - fadeStart)/(1 - fadeStart);
+    endImage.style.opacity=fadeProgress;
+    if(fadeProgress >= 0.3){
+      carousel.classList.add("visible");
+    } else {
+      carousel.classList.remove("visible");
+    }
+  } else {
+    endImage.style.opacity=0;
+    carousel.classList.remove("visible");
+  }
 }
 
-}else{
-endImage.style.opacity=0;
-carousel.classList.remove("visible");
-}
-
-}
-
-window.addEventListener("scroll",updateFrames,{passive:true});
+window.addEventListener("scroll", updateFrames, {passive:true});
+updateFrames(); 
 
 });
 
